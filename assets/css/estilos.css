@@ -64,5 +64,42 @@ main {
 
 .principal {
   width: 100%;
-  height: 430px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+
+
+.principal_contenido {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+
+}
+
+.principal_texto {
+  width: 70% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.redes_sociales ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.redes_sociales li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fotoKeko {
+  width: 200px;
+  height: 200px;
 }
