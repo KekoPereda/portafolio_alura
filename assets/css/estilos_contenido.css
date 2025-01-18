@@ -1,0 +1,301 @@
+.titulo_centrado {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--colorTxtTitulo)
+}
+
+.titulo_centrado2 {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--colorTxtTitulo2)
+}
+
+.estructura_contenido {
+    width: 90%;
+    margin: auto;
+    display: flexbox;
+    justify-content: center;
+
+
+}
+
+
+/* 
+.estructura_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+    min-height: 200px;
+    gap: 20px;
+    width: 100%;
+   
+     
+} 
+
+.caja_skill {
+    flex: 1 1 calc(33.33% - 20px);
+     max-width: calc(33.33% - 20px);
+     min-width: 250px;
+     
+}
+*/
+
+/* .estructura_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+} */
+
+.estructura_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 200px;
+    gap: 25px;
+    width: 100%;
+    transition: all;
+    transition-duration: 2s;
+}
+
+.caja_skill_tecnologia {
+    text-align: start;
+    text-transform: capitalize;
+    transition: all;
+    /* transition-duration: 0.2s; */
+}
+
+
+.caja_skill {
+    margin-top: 30px;
+    min-width: 250px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+
+    /* transition: all;
+    transition-duration: 0.2s; */
+
+    border: 1px solid rgba(255, 255, 255, 0.252);
+
+    background-color: #314f765e;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(25px);
+
+    box-shadow: 1px 1px 5px #2fc8f250;
+    /* background: rgb(111,190,219);
+background: linear-gradient(29deg, rgba(111,190,219,1) 0%, rgba(19,64,83,1) 93%); */
+
+
+
+    transition: all;
+    transition-duration: 0.8;
+}
+
+
+.img_tec {
+    height: 45px;
+}
+
+.txt_tec {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*FORMACION*/
+
+
+.estructura_formacion {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* .estructura_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    transition: all;
+    transition-duration: 2s;
+} */
+
+
+.formacion_profesional {
+    width: 100% !important;
+    height: 325px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.intituto {
+    width: 30%;
+    height: 250px;
+}
+
+.caja_instituto {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgb(17 17 26 / 50%) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    background-color: white;
+}
+
+
+.img_logo_formacion {
+    width: 160px;
+    transition-duration: 1s;
+}
+
+.img_logo_formacion_am {
+    width: 80%;
+    transition-duration: 1s;
+}
+
+.img_logo_formacion_al {
+    width: 50%;
+    transition-duration: 1s;
+
+}
+
+.textos_ip {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.ip_carrera {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ip_año {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FORMACION FIN*/
+
+
+@media (max-width: 1020px) {
+
+    .estructura_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        transition: all;
+        transition-duration: 1s;
+    }
+
+    .caja_formacion {
+        width: 30%;
+        height: 150px;
+
+
+        transition: all;
+        transition-duration: 1s;
+    }
+
+    .img_logo_formacion {
+        width: 120px;
+
+    }
+
+    .img_logo_formacion_am {
+        width: 70%;
+    }
+
+    .img_logo_formacion_al {
+        width: 40%;
+
+    }
+
+}
+
+
+@media (max-width: 903px) {
+
+    .estructura_formacion {
+        width: 90%;
+        height: 1000px;
+        margin: auto;
+    }
+
+    .formacion_profesional {
+        width: 100% !important;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+
+    }
+
+
+
+    .intituto {
+        width: 100% !important;
+        height: 300px;
+
+    }
+
+    .caja_instituto {
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    }
+
+    .img_logo_formacion {
+        width: 125px;
+
+    }
+
+    .img_logo_formacion_am {
+        width: 80%;
+    }
+
+    .img_logo_formacion_al {
+        width: 50%;
+
+    }
+
+    .imagen_proyecto {
+        width: 80%;
+    }
+}

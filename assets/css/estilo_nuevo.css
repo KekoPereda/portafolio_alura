@@ -1,0 +1,403 @@
+:root {
+    --negroAzul: #043b52;
+    --colorFuente: #d7d7d7;
+    --colorRed: #78d9ff;
+    --colorTxtTitulo: #d3e9f2;
+    --colorTxtTitulo2: #313232;
+
+
+    --color_celeste: #4aa3de;
+    --color_celesteOscuro: #085182;
+    --color_naranjo: #F05B31;
+    --color_naranjoOscuro: #892e15;
+    --color_grisClaro: #F4F9FF;
+    /* --colorFuente: #262626; */
+    --colorNegro: #0b0b0b;
+    --colorBlanco: #ffffff;
+    --colorBlancoGris: #f6f6f6;
+    --colorfondoFormacion: #323639;
+    --colorfondoExperiencia: #f2f2f2;
+    --second-color: #f7f382;
+}
+
+/* var(--colorFuente); */
+
+
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--colorFuente);
+
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    filter: drop-shadow(0px 0px 5px #06daff82)
+}
+
+h2 {
+    font-size: 2.0em;
+    margin: 40px 0 10px 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    color: white;
+
+    background-color: var(--negroAzul);
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 33%) 0px 2px 8px 0px;
+    /* height: 150px; */
+    /* background-color: var(--color_grisClaro); */
+    /* border-bottom: #223094 2px solid; */
+    position: relative;
+    font-weight: 900;
+}
+
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: var(--colorNegro);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 
+
+main {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    background-color: #86c6fbd6;
+
+} */
+
+
+.fondo_skills {
+
+    background-color: #124b68;
+    /* background-color: var(--colorBlancoGris); */
+    padding-bottom: 80px;
+}
+
+.fondo_skills2 {
+
+    background: rgb(69, 155, 187);
+    background: linear-gradient(180deg, rgba(69, 155, 187, 1) 0%, rgba(5, 76, 106, 1) 100%);
+    /* background-color: var(--colorBlancoGris); */
+    padding-bottom: 80px;
+}
+
+.fondo_formacion {
+    background-color: var(--colorfondoFormacion);
+    padding-bottom: 80px;
+}
+
+.fondo_experiencia {
+    background-color: var(--colorfondoExperiencia);
+    padding-bottom: 50px;
+}
+
+.fondo_contacto {
+    background: rgb(199, 226, 255);
+    background: linear-gradient(0deg, rgba(199, 226, 255, 1) 0%, rgba(214, 234, 255, 1) 75%);
+    /* background-color: rgb(199, 229, 250); */
+    padding: 70px 0;
+}
+
+
+section {
+    width: 100% !important;
+    display: flex;
+
+    justify-content: center;
+    /* background-color: rgb(180, 215, 215); */
+}
+
+
+/*   ENCABEZADO*/
+
+.encabezado {
+    width: 90%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.menu_superior {
+    display: flex;
+    align-items: center;
+}
+
+.menu_superior ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.menu_superior a.menu {
+    text-decoration: none;
+    color: inherit;
+    /* Esto asegura que herede el color del texto */
+}
+
+.menu_superior a.menu:hover {
+    text-decoration: none;
+    /* También evita subrayados al pasar el cursor */
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.perfil p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.foto_perfil {
+    width: 60px;
+    height: 60px;
+}
+
+.bio {
+    background: rgb(2, 99, 135);
+    background: radial-gradient(circle, rgba(2, 99, 135, 1) 0%, rgba(4, 46, 64, 1) 93%);
+
+    /* background: linear-gradient(0deg, rgba(194, 238, 255, 1) 10%, rgba(255, 255, 255, 1) 84%);
+    background-color: rgba(250, 235, 215, 0.71); */
+
+}
+
+
+
+.biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90% !important;
+}
+
+
+.estructura {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    min-height: 250px;
+
+}
+
+.descripcion_txt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: left;
+    width: 70%;
+    line-height: 1.4rem;
+    gap: 10px;
+}
+
+.descripcion_txt h1 {
+    line-height: 3rem;
+
+    transition: 0.5s;
+}
+
+.descripcion_txt span {
+    color: var(--colorBlanco);
+    line-height: 3rem;
+}
+
+
+.descripcion_foto {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin: 30px 0;
+    transition: all;
+    transition-duration: 0.8s;
+    filter: drop-shadow(1px 5px 15px #4496dd7f);
+
+}
+
+.sobre_mi {
+    display: flex;
+    width: 100%;
+}
+
+.firma {
+    width: 250px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.redes_sociales {
+    /* width: 100%; */
+    height: 25px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 20px;
+    color: var(--colorRed);
+}
+
+.arrow {
+    width: 15px;
+    margin: 0 10px;
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+    .menu_superior .menu {
+        display: none;
+    }
+
+
+    .descripcion_foto {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+@media (max-width: 820px) {
+
+
+    .estructura {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+
+    }
+
+    .descripcion_txt {
+        width: 100%;
+    }
+
+    .descripcion_foto {
+        width: 200px;
+        height: 200px;
+        transition-duration: 0.8s;
+
+    }
+
+    .redes_sociales {
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        width: 15px;
+        margin: 0 5px;
+    }
+
+    .firma {
+        width: 200px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    h1 {
+        font-size: 2.1em;
+        margin: 0;
+    }
+
+
+    .biografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+    }
+
+
+    .descripcion_foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .firma {
+        width: 150px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .menu_superior ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .red {
+        font-size: 15px;
+    }
+}
